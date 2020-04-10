@@ -1,0 +1,173 @@
+.reservation {
+  background-image: url("https://www.transparenttextures.com/patterns/white-diamond.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-xl);
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .reservation {
+    flex-direction: column-reverse;
+  }
+}
+
+.pictires {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 var(--space-xl);
+  flex-basis: 50%;
+}
+
+.wpapperPic {
+  display: flex;
+  justify-content: center;
+  padding: var(--space-l);
+}
+
+.pic {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 250px;
+  height: 500px;
+}
+
+.pic1 {
+  animation: picschanging1 20s infinite ease-in-out;
+}
+
+.pic2 {
+  animation: picschanging2 20s infinite ease-in-out;
+}
+
+#themeSwitcher:checked~.pageWrapper .pic1 {
+  animation: picschanging1veg 20s infinite ease-in-out;
+}
+
+#themeSwitcher:checked~.pageWrapper .pic2 {
+  animation: picschanging2veg 20s infinite reverse ease-in-out;
+}
+
+
+@keyframes picschanging1 {
+  0% {
+    background-image: url('../images/respic1.jpg');
+  }
+
+  10% {
+    background-image: url('../images/respic5.jpg');
+  }
+
+  30% {
+    background-image: url('../images/respic3.jpg');
+  }
+
+  50% {
+    background-image: url('../images/respic4.jpg');
+  }
+
+  70% {
+    background-image: url('../images/respic2.jpg');
+  }
+
+  90% {
+    background-image: url('../images/respic3.jpg');
+  }
+
+  100% {
+    background-image: url('../images/respic1.jpg');
+  }
+}
+
+
+@keyframes picschanging2 {
+  0% {
+    background-image: url('../images/respic3.jpg');
+  }
+
+  10% {
+    background-image: url('../images/respic2.jpg');
+  }
+
+  30% {
+    background-image: url('../images/respic4.jpg');
+  }
+
+  50% {
+    background-image: url('../images/respic1.jpg');
+  }
+
+  70% {
+    background-image: url('../images/respic5.jpg');
+  }
+
+  90% {
+    background-image: url('../images/respic1.jpg');
+  }
+
+  100% {
+    background-image: url('../images/respic3.jpg');
+  }
+}
+
+@keyframes picschanging1veg {
+  0% {
+    background-image: url('../images/respic1veg.jpg');
+  }
+
+  10% {
+    background-image: url('../images/respic2veg.jpg');
+  }
+
+  30% {
+    background-image: url('../images/respic3veg.jpg');
+  }
+
+  50% {
+    background-image: url('../images/respic4veg.jpg');
+  }
+
+  70% {
+    background-image: url('../images/respic5veg.jpg');
+  }
+
+  90% {
+    background-image: url('../images/respic2veg.jpg');
+  }
+
+  100% {
+    background-image: url('../images/respic1veg.jpg');
+  }
+}
+
+@keyframes picschanging2veg {
+  0% {
+    background-image: url('../images/respic3veg.jpg');
+  }
+
+  10% {
+    background-image: url('../images/respic5veg.jpg');
+  }
+
+  30% {
+    background-image: url('../images/respic1veg.jpg');
+  }
+
+  50% {
+    background-image: url('../images/respic3veg.jpg');
+  }
+
+  70% {
+    background-image: url('../images/respic2veg.jpg');
+  }
+
+  90% {
+    background-image: url('../images/respic4veg.jpg');
+  }
+
+  100% {
+    background-image: url('../images/respic3veg.jpg');
+  }
+}

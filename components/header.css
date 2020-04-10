@@ -1,0 +1,66 @@
+.mainHeader {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  position: relative;
+  background-image: url('../images/header.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: var(--headerHeight);
+}
+
+.headName {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.headName>h1 {
+  color: var(--brightText);
+  line-height: var(--line-height-l);
+}
+
+.headName .wpapperDivider {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  padding: var(--space-xl) 0;
+}
+
+.headName .divider {
+  height: 30px;
+}
+
+.buttonGroup .button {
+  margin: var(--space-s);
+  width: 210px;
+  padding: var(--space-s);
+  font-size: var(--font-size-m);
+  line-height: var(--line-height-m);
+  transition: ease .7s;
+}
+
+.buttonGroup .button:hover {
+  transform: scale(1.1);
+}
+
+.buttonGroup .black {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid #ffffff;
+}
+
+.buttonGroup .black a {
+  color: var(--brightText);
+}
+
+.buttonGroup .white {
+  background-color: rgba(255, 238, 238, 0.7);
+  border: 1px solid #050505;
+}
+
+.buttonGroup .white a {
+  color: var(--darkText);
+}

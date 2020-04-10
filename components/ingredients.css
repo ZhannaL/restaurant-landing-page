@@ -1,0 +1,79 @@
+.ingredients {
+  position: relative;
+  background-image: url('../images/ingridients.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding: var(--space-xxl) 0;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#themeSwitcher:checked~.pageWrapper .ingredients {
+  background-image: url('../images/ingridientsveg.jpg');
+}
+
+.infoIngredients {
+  padding: var(--space-xxl) var(--space-l);
+  background-color: #1d1d1dc9;
+  width: 450px;
+  color: var(--brightText);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.infoIngredients p {
+  text-align: center;
+  line-height: var(--line-height-l);
+}
+
+.infoIngredients .divider {
+  padding: var(--space-s) 0;
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-basis: 50%;
+}
+
+.iconsIngredients {
+  padding-top: var(--space-s);
+  display: flex;
+  justify-content: space-between;
+}
+
+.ing {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 105px;
+  border-radius: 50%;
+}
+
+.ing1 {
+  background-image: url('../images/iconIngr1.jpg');
+}
+
+.ing2 {
+  background-image: url('../images/iconIngr2.jpg');
+}
+
+.ing3 {
+  background-image: url('../images/iconIngr3.jpg');
+}
+
+#themeSwitcher:checked~.pageWrapper .ing1 {
+  background-image: url('../images/iconIngr1veg.jpg');
+}
+
+#themeSwitcher:checked~.pageWrapper .ing2 {
+  background-image: url('../images/iconIngr2veg.jpg');
+}
+
+#themeSwitcher:checked~.pageWrapper .ing3 {
+  background-image: url('../images/iconIngr3veg.jpg');
+}

@@ -1,0 +1,52 @@
+.navMenu {
+  box-shadow: inset 0 20px 50px 0 #000000;
+  min-height: 30px;
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  align-items: baseline;
+  font-size: var(--font-size-m);
+  color: white;
+  flex-grow: 1;
+
+}
+
+.menu .logo {
+  display: block;
+  margin-right: auto;
+  font-size: var(--font-size-l);
+  font-family: var(--main-font);
+  font-weight: bold;
+  cursor: default;
+  align-items: flex-end;
+}
+
+.menu>li {
+  padding: var(--space-xs) var(--space-m);
+}
+
+.menuItem {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.social {
+  display: flex;
+  color: var(--social);
+}
+
+.social>li {
+  padding: 0 var(--space-xs);
+}
+
+.menu>.menuItem a {
+  color: white;
+  transition: all .5s ease-out;
+}
+
+.menu>.menuItem:hover {
+  background-color: rgba(var(--mainColorRGB), 0.7);
+}

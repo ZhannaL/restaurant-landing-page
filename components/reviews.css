@@ -1,0 +1,42 @@
+.reviews {
+  position: relative;
+  background-image: url('../images/reviews.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  padding: var(--space-xxl) 0;
+}
+
+#themeSwitcher:checked~.pageWrapper .reviews {
+  background-image: url('../images/reviewsveg.jpg');
+}
+
+.review {
+  padding: var(--space-xxl) var(--space-m);
+  background-color: #1d1d1dc9;
+  width: 550px;
+  color: var(--brightText);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.review .divider {
+  padding: var(--space-s) 0;
+  width: 100%;
+}
+
+.review q {
+  font-size: var(--font-size-m);
+  font-weight: bold;
+  text-align: center;
+  line-height: var(--line-height-xl);
+}
+
+.review p {
+  text-align: right;
+}
