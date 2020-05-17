@@ -1,0 +1,14 @@
+:root {
+  --brightText: #f3f3f3;
+  --darkText: #2b2b2b;
+  --social: #bdd88b;
+  --mainColor: #cc9900;
+  --mainColorRGB: 204, 153, 0;
+  --themeSwitcherText: 'I\'m vegan! 🍂';
+}
+
+#themeSwitcher:checked~.pageWrapper {
+  --mainColor: #27850b;
+  --mainColorRGB: 39, 133, 11;
+  --themeSwitcherText: 'I\'m not vegan';
+}

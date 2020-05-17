@@ -1,0 +1,58 @@
+.about {
+  background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+  padding: var(--space-xl) 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoAbout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 400px;
+}
+
+.wpapperDish {
+  display: flex;
+  justify-content: center;
+  padding: var(--space-xl);
+}
+
+.dishAbout {
+  border: none;
+  background-image: url('../images/dish.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+}
+
+#themeSwitcher:checked~.pageWrapper .dishAbout {
+  background-image: url('../images/dish-veg.png');
+}
+
+.infoAbout .divider {
+  margin: 0;
+  padding: var(--space-s) 0;
+  width: 100%;
+}
+
+.infoAbout p {
+  text-align: center;
+  line-height: var(--line-height-l);
+  padding-bottom: var(--space-m);
+}
+
+.infoAbout h3 {
+  color: var(--mainColor)
+}
+
+@media only screen and (max-width: 850px) {
+
+  .about {
+    flex-direction: column;
+  }
+}

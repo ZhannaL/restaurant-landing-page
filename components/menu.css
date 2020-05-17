@@ -1,0 +1,75 @@
+.mainMenu {
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  padding: var(--space-xl) 0;
+  display: grid;
+  counter-reset: grid-items;
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+  align-items: center;
+}
+
+.mainMenu>* {
+  justify-self: center;
+}
+
+.mainMenu .wpapperDivider {
+  display: flex;
+  justify-content: center;
+  padding: var(--space-s) 0;
+}
+
+.mainMenu .divider {
+  width: 60%;
+}
+
+.menuBlock {
+  padding: var(--space-s);
+  width: 550px;
+}
+
+.menuBlock h3 {
+  color: var(--mainColor);
+}
+
+.menuLine {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-s);
+  padding-bottom: var(--space-l);
+}
+
+.namePrice {
+  color: var(--mainColor);
+  display: flex;
+}
+
+.namePrice .price {
+  margin-left: auto;
+}
+
+.menuLine .description {
+  text-align: justify;
+}
+
+.menuLine .deviderLine {
+  background-color: var(--mainColor);
+  height: 1px;
+  opacity: 20%;
+  margin: var(--space-s) 0;
+}
+
+.special::before {
+  content: 'Special';
+  position: absolute;
+  right: -1px;
+  line-height: 24px;
+  top: -24px;
+  padding: 0 var(--space-s);
+  background-color: rgba(var(--mainColorRGB), 0.6);
+  color: var(--brightText);
+}
+
+.special {
+  position: relative;
+  padding: var(--space-s);
+  border: 1px solid rgba(var(--mainColorRGB), 0.5);
+}
